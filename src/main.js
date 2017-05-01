@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import * as _ from "lodash";
+import axios  from "axios";
 /*import App from './App.vue'
 
  new Vue({
@@ -14,14 +15,17 @@ new Vue({
         number: 0,
         cssData: ''
     },
+
     methods: {
         changeSomeData: function (color) {
             this.cssData = color;
+            // axios.get();
         },
         changeNumber: _.debounce(function () {
             this.number++;
         }, 1000)
     },
+
     watch: {
         cssData: function (lastChange) {
             this.changeNumber();
