@@ -1,3 +1,4 @@
+import 'es6-promise/auto';
 import Vue from 'vue'
 import * as _ from "lodash";
 import axios  from "axios";
@@ -13,7 +14,8 @@ new Vue({
     el: '#app',
     data: {
         number: 0,
-        cssData: ''
+        cssData: '',
+        numericData: 1999
     },
 
     methods: {

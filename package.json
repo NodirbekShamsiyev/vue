@@ -10,13 +10,16 @@
   },
   "dependencies": {
     "axios": "^0.16.1",
+    "es6-promise": "^4.1.0",
     "lodash": "^4.17.4",
-    "vue": "^2.2.1"
+    "vue": "^2.2.1",
+    "webpack-manifest-plugin": "^1.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
     "babel-preset-latest": "^6.0.0",
+    "clean-webpack-plugin": "^0.1.16",
     "cross-env": "^3.0.0",
     "css-loader": "^0.25.0",
     "file-loader": "^0.9.0",
