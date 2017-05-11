@@ -15,7 +15,6 @@ new Vue({
     data: {
         number: 0,
         cssData: '',
-        numericData: 1999
     },
 
     methods: {

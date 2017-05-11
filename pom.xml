@@ -29,6 +29,24 @@
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>2.6</version>
                 <executions>
+                   <!-- <execution>
+                        <id>copy-resources-meta-inf</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${output}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>dist</directory>
+                                    <filtering>false</filtering>
+                                    <exclude>*.map</exclude>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                    -->
                     <execution>
                         <id>copy-resources</id>
                         <phase>validate</phase>
@@ -36,7 +54,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${output}</outputDirectory>
+                            <outputDirectory>${project.build.outputDirectory}/sails/client/</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>dist</directory>
